@@ -1,6 +1,6 @@
 services:
   web:
-    container_name: teste
+
     build: .
-    ports:
+      ports:
       - "8080:80"
