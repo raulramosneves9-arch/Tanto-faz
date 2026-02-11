@@ -3,13 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ATIVIDADE PROPOSTA</title>
+    <title>ATIVIDADE PROPOSTA - SHOOTER</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <p class="quadrado1">1</p>
-     <p class="quadrado2">2</p>
-      <p class="quadrado3">3</p>
-       <p class="quadrado4">4</p>
+    <div class="game-container">
+        <!-- HUD Info -->
+        <div class="hud">
+            <div class="ammo">Munição: <span id="ammo">30</span></div>
+            <div class="wave">Onda: <span id="wave">1</span></div>
+            <div class="kills">Derrotas: <span id="kills">0</span></div>
+        </div>
+
+        <!-- Personagem do Jogador -->
+        <div class="personagem" id="player">
+            <div class="corpo-player">
+                <div class="cabeca-player"></div>
+                <div class="torso-player"></div>
+                <div class="bracos-player">
+                    <div class="braco-p braço-esq"></div>
+                    <div class="braco-p braço-dir"></div>
+                </div>
+            </div>
+            <div class="pernas-player">
+                <div class="perna-p"></div>
+                <div class="perna-p"></div>
+            </div>
+            <!-- AK47 Melhorada -->
+            <div class="ak47">
+                <div class="cano-ak"></div>
+                <div class="receptor-ak"></div>
+                <div class="coronha-ak"></div>
+                <div class="mira-ak"></div>
+            </div>
+        </div>
+
+        <!-- Container de Monstros -->
+        <div id="enemies-container"></div>
+
+        <!-- Container de Balas -->
+        <div id="bullets-container"></div>
+
+        <!-- Efeitos de Disparo -->
+        <div id="effects-container"></div>
+    </div>
+
+    <!-- Instruções -->
+    <div class="instructions">
+        <p>WASD para mover | MOUSE para apontar | CLIQUE para atirar</p>
+    </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
